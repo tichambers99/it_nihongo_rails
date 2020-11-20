@@ -1,3 +1,8 @@
 <h1>Profile</h1>
+<h2>Name:</h2>
+<p><%= current_user.name %></p>
+<h2>Age:</h2>
+<p><%= current_user.age %></p>
 <h2>Email address: </h2>
 <p><%= current_user.email %></p>
+<p><%= link_to 'Edit profile', edit_user_registration_path(current_user) %></p>
